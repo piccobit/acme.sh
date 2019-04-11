@@ -8,6 +8,8 @@ RUN apk update -f \
   curl \
   socat \
   tzdata \
+  ca-certificates \
+  tar \
   && rm -rf /var/cache/apk/*
 
 ENV LE_CONFIG_HOME /acme.sh
